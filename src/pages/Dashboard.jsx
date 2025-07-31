@@ -5,6 +5,12 @@ import CreateCustomerPage from "./customer/CreateCustomer";
 import CustomerListPage from "./customer/customerlist/CustomerList";
 import EditCustomerPage from "./customer/EditCustomer";
 import CustomerDetailsPage from "./customer/CustomerDetails";
+import ProductListPage from "./product/ProductList";
+import ProductCreatePage from "./product/ProductCreate";
+import ProductEditPage from "./product/ProductEdit";
+import OrderListPage from "./order/OrderList";
+import { Routes, Route } from "react-router-dom";
+
 
 const Dashboard = () => {
     return (
@@ -15,7 +21,16 @@ const Dashboard = () => {
                     <Navbar/>
                 </div>
                 <div className="lg:ml-64 p-6 bg-gray-100">
-                    <CustomerDetailsPage/>
+                    <Routes>
+                        <Route path="/" element={<CreateCustomerPage/>} />
+                        <Route path="/customer/edit" element={<EditCustomerPage/>}/>
+                        <Route path="/customer/list" element={<CustomerListPage/>} />
+                        <Route path="/customer/details" element={<CustomerDetailsPage/>} />
+                        <Route path="/product/list" element={<ProductListPage/>}/>
+                        <Route path="product/create" element={<ProductCreatePage/>}/>
+                        <Route path="product/edit" element={<ProductEditPage/>}/>
+                        <Route path="order/list" element={<OrderListPage/>}/>
+                    </Routes>
                 </div>
             </div>
         </div>
