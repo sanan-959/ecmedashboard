@@ -381,7 +381,7 @@ const Sidebar = () => {
                 className="hidden px-6 py-2 space-y-1 text-sm text-gray-600 dark:text-gray-400">
                 <ul className="list-disc text-gray-500">
                   <li>
-                    <a href="/product/edit"
+                    <a href="/order/edit"
                       className="block px-2 py-1 hover:bg-gray-100 rounded dark:hover:bg-gray-700">Edit</a>
                   </li>
 
@@ -392,8 +392,13 @@ const Sidebar = () => {
                   
                   <li>
                     <a
-                      href="/product/create"
+                      href="/order/create"
                       className="block px-2 py-1 hover:bg-gray-100 rounded dark:hover:bg-gray-700">Create</a>
+                  </li>
+                  <li>
+                    <a
+                      href="/order/details"
+                      className="block px-2 py-1 hover:bg-gray-100 rounded dark:hover:bg-gray-700">Details</a>
                   </li>
                 </ul>
               </div>

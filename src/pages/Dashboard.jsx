@@ -9,6 +9,9 @@ import ProductListPage from "./product/ProductList";
 import ProductCreatePage from "./product/ProductCreate";
 import ProductEditPage from "./product/ProductEdit";
 import OrderListPage from "./order/OrderList";
+import OrderCreatePage from "./order/OrderCreate";
+import OrderEditPage from "./order/EditOrder";
+import OrderDetailsPage from "./order/OrderDetails";
 import { Routes, Route } from "react-router-dom";
 
 
@@ -27,9 +30,12 @@ const Dashboard = () => {
                         <Route path="/customer/list" element={<CustomerListPage/>} />
                         <Route path="/customer/details" element={<CustomerDetailsPage/>} />
                         <Route path="/product/list" element={<ProductListPage/>}/>
-                        <Route path="product/create" element={<ProductCreatePage/>}/>
+                        <Route path="/product/create" element={<ProductCreatePage/>}/>
                         <Route path="product/edit" element={<ProductEditPage/>}/>
-                        <Route path="order/list" element={<OrderListPage/>}/>
+                        <Route path="/order/list" element={<OrderListPage/>}/>
+                        <Route path="/order/create" element={<OrderCreatePage/>}/>
+                        <Route path="/order/edit" element={<OrderEditPage/>}/>
+                        <Route path="order/details" element={<OrderDetailsPage/>}/>
                     </Routes>
                 </div>
             </div>
