@@ -12,6 +12,7 @@ import OrderListPage from "./order/OrderList";
 import OrderCreatePage from "./order/OrderCreate";
 import OrderEditPage from "./order/EditOrder";
 import OrderDetailsPage from "./order/OrderDetails";
+import SettingsPage from "./account/settings/settings";
 import { Routes, Route } from "react-router-dom";
 
 
@@ -36,6 +37,7 @@ const Dashboard = () => {
                         <Route path="/order/create" element={<OrderCreatePage/>}/>
                         <Route path="/order/edit" element={<OrderEditPage/>}/>
                         <Route path="order/details" element={<OrderDetailsPage/>}/>
+                        <Route path="/settings" element={<SettingsPage/>}/>
                     </Routes>
                 </div>
             </div>

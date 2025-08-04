@@ -16,7 +16,8 @@ const OrderDetailsPage = () => {
 
             <div className="flex flex-col lg:flex-row gap-5 mt-5">
                 {/* Left Side */}
-                <div className="flex flex-col w-full lg:w-7/12 bg-white p-4 rounded-2xl self-start">
+                <div className="flex flex-col w-full lg:w-7/12 gap-5">
+                    <div className="flex flex-col w-full bg-white p-4 rounded-2xl self-start">
                     <span className="font-semibold text-xl pb-5">Products ordered</span>
                     <div className="flex justify-between items-center py-3 my-3 bg-gray-50 p-4 rounded-xl">
                         <div className="flex gap-3 items-center">
@@ -64,11 +65,175 @@ const OrderDetailsPage = () => {
                         </div>
                     </div>
 
+                    </div>
+
+                    {/* left Second */}
+                    
+                    <div className="flex flex-col w-full bg-white p-4 rounded-2xl self-start">
+                        <div className="flex gap-3 items-center">
+                            <span className="font-semibold text-xl">Payment</span>
+                            <span className=" bg-green-100 py-1 px-3 rounded-lg font-semibold text-sm text-green-600">Paid</span>
+                        </div>
+                        <div className="flex flex-col mt-7">
+                           <div className="flex justify-between items-center py-2">
+                            <span className="text-sm text-gray-400 font-semibold">Subtotal</span>
+                            <span className="text-sm text-gray-400 ">$1,762.00</span> 
+                           </div>
+
+                           <div className="flex justify-between items-center py-2">
+                            <span className="text-sm text-gray-400 font-semibold">Shipping</span>
+                            <span className="text-sm text-gray-400 ">$15.00</span>
+                           </div>
+
+                           <div className="flex justify-between items-center py-2">
+                            <span className="text-sm text-gray-400 font-semibold">Tax</span>
+                            <span className="text-sm text-gray-400 ">$105.72</span>
+                           </div>
+
+                           <div className="flex justify-between items-center py-2">
+                            <span className="text-md text-black font-bold">Total</span>
+                            <span className="text-md text-black font-bold">$1,870.72</span>
+                           </div>
+                            
+                            <hr className="my-5" />
+
+                           <div className="flex justify-between items-center">
+                            <span className="text-md text-gray-400 font-normal">Customer payment</span>
+                            <span className="text-xl text-black font-bold">$1,870.72</span>
+                           </div>
+                           
+                        </div>
+                    </div>
+
+                    {/* left Third */}
+
+                    <div className="flex flex-col w-full bg-white p-4 rounded-2xl self-start">
+                        <div className="flex gap-3 items-center">
+                            <span className="font-semibold text-xl">Activity</span>
+                            <span className=" bg-green-100 py-1 px-3 rounded-lg font-semibold text-sm text-green-600">Fulfilled</span>
+                        </div>
+                        <div className="mt-4">
+                            <span className="font-bold">Sunday, 06 March</span>
+                        </div>
+                        <div className="mt-3">
+                            <div className="flex items-center gap-3 ">
+                                <div>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle text-green-500"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
+                                </div>
+                                <div>
+                                    <span className="text-sm font-bold text-green-600">Parcel has been delivered</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-0.5 h-16 bg-gray-300 ml-2"></div>
+
+                                    <div className="flex flex-col gap-1 text-sm text-gray-500">
+                                        <span>Recipient: Steve Sutton</span>
+                                        <span>01:13 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-3">
+                            <div className="flex items-center gap-3 ">
+                                <div>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle text-blue-700"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
+                                </div>
+                                <div>
+                                    <span className="text-sm font-bold text-black">Parcel is out for delivery</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-0.5 h-10 bg-gray-300 ml-2"></div>
+
+                                    <div className="flex flex-col gap-1 text-sm text-gray-500">
+                                        
+                                        <span>08:32 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-3">
+                            <div className="flex items-center gap-3 ">
+                                <div>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle text-blue-700"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
+                                </div>
+                                <div>
+                                    <span className="text-sm font-bold text-black">Parcel has arrived at delivery station</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-0.5 h-10 bg-gray-300 ml-2"></div>
+
+                                    <div className="flex flex-col gap-1 text-sm text-gray-500">
+                                        
+                                        <span>06:15 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div className="mt-7">
+                            <span className="font-bold">Saturday, 05 March</span>
+                        </div>
+
+                        <div className="mt-3">
+                            <div className="flex items-center gap-3 ">
+                                <div>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle text-blue-700"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
+                                </div>
+                                <div>
+                                    <span className="text-sm font-bold text-black">Parcel has been picked up by courier</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-0.5 h-10 bg-gray-300 ml-2"></div>
+
+                                    <div className="flex flex-col gap-1 text-sm text-gray-500">
+                                        
+                                        <span>11:56 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className="mt-3">
+                            <div className="flex items-center gap-3 ">
+                                <div>
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle text-blue-700"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
+                                </div>
+                                <div>
+                                    <span className="text-sm font-bold text-black">Seller is preparing to ship your parcel</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-0.5 h-10 bg-gray-300 ml-2"></div>
+
+                                    <div className="flex flex-col gap-1 text-sm text-gray-500">
+                                        
+                                        <span>08:59 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
                 </div>
 
+                
+
                 {/* Right Side  */}
-                <div className="flex flex-col w-full lg:w-5/12 bg-white p-4 rounded-2xl">
-                    <div className="flex flex-col bg-white p-4 rounded-2xl">
+                <div className="flex flex-col w-full lg:w-5/12 gap-5">
+                    <div className="flex flex-col w-full bg-white p-4 rounded-2xl self-start ">
                         <span className="font-semibold text-xl">Customer</span>
                         <div className="flex items-center gap-3 mt-3">
                             <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
@@ -118,6 +283,15 @@ const OrderDetailsPage = () => {
                                 <span className="text-gray-400 text-sm">Alaska 99901</span>
                                 <span className="text-gray-400 text-sm">United States of America</span>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col w-full bg-white p-4 rounded-2xl self-start ">
+                        <span className="font-semibold text-xl">Note</span>
+                        <div className="bg-gray-50 text-normal text-gray-500 p-4 text-justify rounded-lg mt-3">
+                            <span>
+                                If there are any issues or delays with my order, please don't hesitate to contact me, I value clear communication and appreciate your attention to detail.
+                            </span>
                         </div>
                     </div>
                 </div>
